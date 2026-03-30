@@ -1,0 +1,62 @@
+:root {
+    --color-beige: #F5EBE0;
+    --color-pink-soft: #FADADD;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.bg-beige-soft {
+    background-color: var(--color-beige);
+}
+
+.bg-pink-pastel {
+    background-color: var(--color-pink-soft);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+    background: #e4e4e7;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #fbcfe8;
+}
+
+/* Animations */
+.service-card {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.06);
+}
+
+header.scrolled {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Modern Inputs */
+input, select {
+    appearance: none;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+}
