@@ -65,8 +65,10 @@ input, select {
 
 /* Увеличиваем шрифт для ПК и адаптивно уменьшаем на мобильных */
 .hero-epilation-title {
-    font-size: 2rem !important; /* 32px на ПК */
-    line-height: 1.3;
+    font-size: 4rem !important; 
+    line-height: 3rem;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    
 }
 
 @media (max-width: 1024px) {
