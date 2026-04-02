@@ -60,3 +60,20 @@ input, select {
         font-size: 3rem;
     }
 }
+
+/* Добавьте в конец вашего CSS файла */
+
+/* Адаптация текста эпиляции на мобильных */
+@media (max-width: 640px) {
+    .font-medium.text-xl {
+        font-size: 1.125rem;
+        line-height: 1.4;
+        padding: 0 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .font-medium.text-xl {
+        font-size: 1rem;
+    }
+}
