@@ -73,13 +73,15 @@ input, select {
 
 @media (max-width: 1024px) {
     .hero-epilation-title {
-        font-size: 1.75rem !important; /* 28px на планшетах */
+        font-size: 4rem !important; 
+    line-height: 3rem;
     }
 }
 
 @media (max-width: 768px) {
     .hero-epilation-title {
-        font-size: 1.5rem !important; /* 24px на маленьких планшетах */
+           font-size: 3rem !important; 
+    line-height: 2rem;
     }
 }
 
