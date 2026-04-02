@@ -95,103 +95,123 @@
 
     <!-- Services Section -->
     <section id="services" class="py-24 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                <div class="max-w-xl">
-                    <h2 class="text-4xl font-serif mb-4">Наши услуги</h2>
-                    <p class="text-zinc-500">Используем передовые технологии для безболезненного и эффективного удаления волос навсегда.</p>
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+            <div class="max-w-xl">
+                <h2 class="text-4xl font-serif mb-4">Наши услуги</h2>
+                <p class="text-zinc-500">Используем передовые технологии для безболезненного и эффективного удаления волос навсегда.</p>
+            </div>
+            <a href="#prices" class="text-sm font-bold uppercase tracking-widest border-b-2 border-pink-200 pb-1 hover:border-pink-400 transition-all">Смотреть прайс</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid">
+            <!-- Service Card 1 -->
+            <div class="service-card group bg-zinc-50 p-10 rounded-[40px] border border-transparent hover:border-pink-100 hover:bg-white flex flex-col justify-between h-full cursor-default">
+                <div>
+                    <div class="flex justify-between items-start mb-8">
+                        <span class="text-xs font-bold uppercase tracking-widest text-zinc-400 group-hover:text-pink-400 transition-colors">01</span>
+                        <div class="w-12 h-12 rounded-full border border-zinc-200 flex items-center justify-center text-zinc-400 group-hover:bg-zinc-900 group-hover:text-white transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                                <path d="M7 7h10v10"></path>
+                                <path d="M7 17 17 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-4">Электроэпиляция</h3>
+                    <p class="text-zinc-500 mb-8 leading-relaxed">Единственный признанный метод удаления волос навсегда. Работаем с любым типом волос и кожи.</p>
                 </div>
-                <a href="#prices" class="text-sm font-bold uppercase tracking-widest border-b-2 border-pink-200 pb-1 hover:border-pink-400 transition-all">Смотреть прайс</a>
+                <div class="flex justify-between items-center pt-6 border-t border-zinc-200/50">
+                    <span class="text-sm font-medium text-zinc-400">от 30 мин</span>
+                    <span class="font-bold text-lg">от 50 ₽/мин</span>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid">
-                <!-- Service Cards -->
+            <!-- Service Card 2 -->
+            <div class="service-card group bg-zinc-50 p-10 rounded-[40px] border border-transparent hover:border-pink-100 hover:bg-white flex flex-col justify-between h-full cursor-default">
+                <div>
+                    <div class="flex justify-between items-start mb-8">
+                        <span class="text-xs font-bold uppercase tracking-widest text-zinc-400 group-hover:text-pink-400 transition-colors">02</span>
+                        <div class="w-12 h-12 rounded-full border border-zinc-200 flex items-center justify-center text-zinc-400 group-hover:bg-zinc-900 group-hover:text-white transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                                <path d="M7 7h10v10"></path>
+                                <path d="M7 17 17 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-4">Лазерная эпиляция</h3>
+                    <p class="text-zinc-500 mb-8 leading-relaxed">Быстро, комфортно и эффективно для больших зон. Современный диодный лазер.</p>
+                </div>
+                <div class="flex justify-between items-center pt-6 border-t border-zinc-200/50">
+                    <span class="text-sm font-medium text-zinc-400">15-60 мин</span>
+                    <span class="font-bold text-lg">от 1200 ₽</span>
+                </div>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="service-card group bg-zinc-50 p-10 rounded-[40px] border border-transparent hover:border-pink-100 hover:bg-white flex flex-col justify-between h-full cursor-default">
+                <div>
+                    <div class="flex justify-between items-start mb-8">
+                        <span class="text-xs font-bold uppercase tracking-widest text-zinc-400 group-hover:text-pink-400 transition-colors">03</span>
+                        <div class="w-12 h-12 rounded-full border border-zinc-200 flex items-center justify-center text-zinc-400 group-hover:bg-zinc-900 group-hover:text-white transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                                <path d="M7 7h10v10"></path>
+                                <path d="M7 17 17 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-4">Электро на лице</h3>
+                    <p class="text-zinc-500 mb-8 leading-relaxed">Ювелирная работа мастера. Удаляем пушковые и жесткие волосы без следов на коже.</p>
+                </div>
+                <div class="flex justify-between items-center pt-6 border-t border-zinc-200/50">
+                    <span class="text-sm font-medium text-zinc-400">от 10 мин</span>
+                    <span class="font-bold text-lg">от 60 ₽/мин</span>
+                </div>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="service-card group bg-zinc-50 p-10 rounded-[40px] border border-transparent hover:border-pink-100 hover:bg-white flex flex-col justify-between h-full cursor-default">
+                <div>
+                    <div class="flex justify-between items-start mb-8">
+                        <span class="text-xs font-bold uppercase tracking-widest text-zinc-400 group-hover:text-pink-400 transition-colors">04</span>
+                        <div class="w-12 h-12 rounded-full border border-zinc-200 flex items-center justify-center text-zinc-400 group-hover:bg-zinc-900 group-hover:text-white transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                                <path d="M7 7h10v10"></path>
+                                <path d="M7 17 17 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-4">Пробный сеанс</h3>
+                    <p class="text-zinc-500 mb-8 leading-relaxed">Знакомство с мастером, консультация и процедура 20 минут. Идеально для первого раза.</p>
+                </div>
+                <div class="flex justify-between items-center pt-6 border-t border-zinc-200/50">
+                    <span class="text-sm font-medium text-zinc-400">30 мин</span>
+                    <span class="font-bold text-lg">800 ₽</span>
+                </div>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div class="service-card group bg-zinc-50 p-10 rounded-[40px] border border-transparent hover:border-pink-100 hover:bg-white flex flex-col justify-between h-full cursor-default">
+                <div>
+                    <div class="flex justify-between items-start mb-8">
+                        <span class="text-xs font-bold uppercase tracking-widest text-zinc-400 group-hover:text-pink-400 transition-colors">05</span>
+                        <div class="w-12 h-12 rounded-full border border-zinc-200 flex items-center justify-center text-zinc-400 group-hover:bg-zinc-900 group-hover:text-white transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                                <path d="M7 7h10v10"></path>
+                                <path d="M7 17 17 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-4">Консультация</h3>
+                    <p class="text-zinc-500 mb-8 leading-relaxed">Разбор вашего типа кожи, волос, противопоказаний и составление плана посещений.</p>
+                </div>
+                <div class="flex justify-between items-center pt-6 border-t border-zinc-200/50">
+                    <span class="text-sm font-medium text-zinc-400">15 мин</span>
+                    <span class="font-bold text-lg">Бесплатно</span>
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- Price Section -->
-    <section id="prices" class="py-24 bg-zinc-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-serif mb-4">Прайс-лист</h2>
-                <p class="text-zinc-500">Стоимость зависит от категории специалиста</p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- Master Maria -->
-                <div class="bg-white p-10 rounded-[30px] shadow-sm border border-zinc-100 flex flex-col h-full">
-                    <div class="mb-8">
-                        <h3 class="text-2xl font-serif mb-2">Мария</h3>
-                        <p class="text-pink-500 text-sm font-bold uppercase tracking-wider">Топ-специалист</p>
-                    </div>
-                    <ul class="space-y-6 mb-10 flex-grow">
-                        <li class="flex justify-between items-end border-b border-zinc-100 pb-2">
-                            <span>1 минута</span>
-                            <span class="font-bold text-lg">50 ₽</span>
-                        </li>
-                        <li class="flex justify-between items-end border-b border-zinc-100 pb-2">
-                            <span>1 час</span>
-                            <span class="font-bold text-lg">3000 ₽</span>
-                        </li>
-                        <li class="flex justify-between items-end border-b border-zinc-100 pb-2">
-                            <span>Лазер (Все тело)</span>
-                            <span class="font-bold text-lg">4500 ₽</span>
-                        </li>
-                    </ul>
-                    <p class="text-xs text-zinc-400 italic mb-6">Абонементы от 300 минут с выгодой до 20%</p>
-                    <a href="#booking" class="w-full py-4 text-center border border-zinc-900 rounded-full font-medium hover:bg-zinc-900 hover:text-white transition-all">Выбрать Марию</a>
-                </div>
-
-                <!-- Master Ksenia -->
-                <div class="bg-white p-10 rounded-[30px] shadow-sm border border-zinc-100 flex flex-col h-full">
-                    <div class="mb-8">
-                        <h3 class="text-2xl font-serif mb-2">Ксения</h3>
-                        <p class="text-zinc-400 text-sm font-bold uppercase tracking-wider">Мастер студии</p>
-                    </div>
-                    <ul class="space-y-6 mb-10 flex-grow">
-                        <li class="flex justify-between items-end border-b border-zinc-100 pb-2">
-                            <span>1 минута</span>
-                            <span class="font-bold text-lg">60 ₽</span>
-                        </li>
-                        <li class="flex justify-between items-end border-b border-zinc-100 pb-2">
-                            <span>1 час</span>
-                            <span class="font-bold text-lg">3600 ₽</span>
-                        </li>
-                        <li class="flex justify-between items-end border-b border-zinc-100 pb-2">
-                            <span>Лазер (Все тело)</span>
-                            <span class="font-bold text-lg">3900 ₽</span>
-                        </li>
-                    </ul>
-                    <a href="#booking" class="w-full py-4 text-center border border-zinc-900 rounded-full font-medium hover:bg-zinc-900 hover:text-white transition-all">Выбрать Ксению</a>
-                </div>
-
-                <!-- Promo Package -->
-                <div class="bg-pink-50 p-10 rounded-[30px] border border-pink-100 flex flex-col h-full ring-2 ring-pink-100 ring-offset-4 ring-offset-zinc-50">
-                    <div class="mb-8">
-                        <h3 class="text-2xl font-serif mb-2 text-pink-900">Пробный сеанс</h3>
-                        <p class="text-pink-600 text-sm font-bold uppercase tracking-wider">Идеальное начало</p>
-                    </div>
-                    <ul class="space-y-4 mb-10 flex-grow text-pink-900/80">
-                        <li class="flex items-center gap-3">
-                            <i data-lucide="check" class="w-4 h-4"></i>
-                            <span>Консультация 10 минут</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i data-lucide="check" class="w-4 h-4"></i>
-                            <span>Процедура 20 минут</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i data-lucide="check" class="w-4 h-4"></i>
-                            <span>Индивидуальный подбор</span>
-                        </li>
-                    </ul>
-                    <div class="text-3xl font-serif mb-8 text-pink-950">800 ₽</div>
-                    <a href="#booking" class="w-full py-4 text-center bg-pink-500 text-white rounded-full font-medium hover:bg-pink-600 transition-all shadow-lg shadow-pink-200">Записаться на пробу</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
     <!-- Promotion Banner -->
     <section class="py-12 bg-white overflow-hidden">
