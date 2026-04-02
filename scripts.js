@@ -27,6 +27,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         lucide.createIcons();
     }
 
+    // Закомментировал или удалил добавление карточек через JS, 
+    // чтобы не создавались дубликаты
+    /*
     const servicesGrid = document.getElementById('services-grid');
     if (data.services) {
         data.services.forEach(item => {
@@ -52,6 +55,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
         lucide.createIcons();
     }
+    */
 
     const reviewsContainer = document.getElementById('reviews-container');
     if (data.reviews) {
@@ -101,8 +105,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         duration: 0.8
     });
 
-    // АНИМАЦИЯ ДЛЯ СЕРВИСНЫХ КАРТОЧЕК ПОЛНОСТЬЮ УБРАНА
-    // Карточки видны сразу без всяких эффектов
+    // Анимация для сервисных карточек УБРАНА полностью
+    // Карточки уже видны в HTML и не нуждаются в анимации
 
     window.addEventListener('scroll', () => {
         const header = document.getElementById('main-header');
