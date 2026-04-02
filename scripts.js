@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     lucide.createIcons();
 
-
     let data = {};
     try {
         const response = await fetch('data.json');
@@ -10,7 +9,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     } catch (e) {
         console.error('Data not found, using fallbacks');
     }
-
 
     const benefitsGrid = document.getElementById('benefits-grid');
     if (data.benefits) {
@@ -28,7 +26,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
         lucide.createIcons();
     }
-
 
     const servicesGrid = document.getElementById('services-grid');
     if (data.services) {
@@ -56,7 +53,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         lucide.createIcons();
     }
 
-
     const reviewsContainer = document.getElementById('reviews-container');
     if (data.reviews) {
         data.reviews.forEach(review => {
@@ -76,7 +72,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
         lucide.createIcons();
     }
-
 
     gsap.registerPlugin(ScrollTrigger);
 
@@ -106,17 +101,19 @@ document.addEventListener('DOMContentLoaded', async () => {
         duration: 0.8
     });
 
+    // ИСПРАВЛЕННАЯ АНИМАЦИЯ ДЛЯ СЕРВИСНЫХ КАРТОЧЕК
+    // Убираем scale, оставляем только opacity и y для плавного появления
     gsap.from(".service-card", {
         scrollTrigger: {
             trigger: "#services-grid",
             start: "top 80%",
         },
         opacity: 0,
-        scale: 0.95,
-        stagger: 0.1,
-        duration: 0.6
+        y: 30,  // вместо scale используем y для плавного появления
+        stagger: 0.15,
+        duration: 0.8,
+        ease: "power2.out"
     });
-
 
     window.addEventListener('scroll', () => {
         const header = document.getElementById('main-header');
@@ -127,21 +124,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-
     const form = document.getElementById('contact-form');
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const btn = form.querySelector('button');
-        const originalText = btn.innerText;
-        btn.innerText = 'Заявка отправлена!';
-        btn.classList.remove('bg-pink-500');
-        btn.classList.add('bg-green-500');
-        form.reset();
-        
-        setTimeout(() => {
-            btn.innerText = originalText;
-            btn.classList.remove('bg-green-500');
-            btn.classList.add('bg-pink-500');
-        }, 3000);
-    });
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = form.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = 'Заявка отправлена!';
+            btn.classList.remove('bg-pink-500');
+            btn.classList.add('bg-green-500');
+            form.reset();
+            
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.classList.remove('bg-green-500');
+                btn.classList.add('bg-pink-500');
+            }, 3000);
+        });
+    }
 });
