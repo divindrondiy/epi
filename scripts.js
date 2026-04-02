@@ -101,19 +101,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         duration: 0.8
     });
 
-    // ИСПРАВЛЕННАЯ АНИМАЦИЯ ДЛЯ СЕРВИСНЫХ КАРТОЧЕК
-    // Убираем scale, оставляем только opacity и y для плавного появления
-    gsap.from(".service-card", {
-        scrollTrigger: {
-            trigger: "#services-grid",
-            start: "top 80%",
-        },
-        opacity: 0,
-        y: 30,  // вместо scale используем y для плавного появления
-        stagger: 0.15,
-        duration: 0.8,
-        ease: "power2.out"
-    });
+    // АНИМАЦИЯ ДЛЯ СЕРВИСНЫХ КАРТОЧЕК ПОЛНОСТЬЮ УБРАНА
+    // Карточки видны сразу без всяких эффектов
 
     window.addEventListener('scroll', () => {
         const header = document.getElementById('main-header');
